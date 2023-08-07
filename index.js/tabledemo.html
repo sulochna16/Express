@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    function add()
+    {
+        let ob=document.getElementById('t1')
+        let s1=ob.value 
+        let ob1=document.getElementById('t2')
+        let s2=ob1.value
+        let ob2=document.getElementById('t3')
+        let s3=ob2.value
+        let ob3=document.getElementById('t4')
+        let s4=ob3.value
+        let tab=document.getElementById("tab")
+        let tr=document.createElement('tr')
+        let c1=document.createElement('td')
+        let c2=document.createElement('td')
+        let c3=document.createElement('td')
+        let c4=document.createElement('td')
+        c1.innerText=s1
+        c2.innerText=s2
+        c3.innerText=s3
+        c4.innerHTML=s4
+        tr.append(c1)
+        tr.append(c2)
+        tr.append(c3)
+        tr.append(c4)
+        tab.append(tr)
+
+
+
+    }
+   </script>
+</head>
+<body>
+    <label for="">id:</label>
+<input type="text" name="" id="t1"><br>
+<label for="">Name:</label>
+
+<input type="text" name="" id="t2">
+<br>
+<label for="">Email:</label>
+<input type="email" name="" id="t3">
+<br>
+<label for="">password:</label>
+<input type="password" name="" id="t4">
+<input type="button" name="" id="" value="click here" onclick="add()">
+    <table id="tab" border="1">
+        <th>id</th>
+         <th>Name </th>
+         <th>Email</th>
+         <th>pass</th>
+          
+
+    </table>
+</body>
+</html>
